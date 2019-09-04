@@ -25,7 +25,7 @@ Sitefinity© Admins Workshop
 Table of Content
 ================
 
-[Administrators](./Administrators/readme.md)
+[Setup](./Setup/readme.md)
 -------------------------------------------
 
 [Modules](./Modules/readme.md)
