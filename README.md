@@ -46,7 +46,7 @@ Table of Content
 [Image Libraries](./Image%20Libraries/readme.md)
 -----------------------------------
 
-[Changing Backend Themes](./Backend%20Themes/readme.md)
+[Changing Backend Theme](./Backend%20Theme/readme.md)
 --------------------------------------------------
 
 [Ecommerce](./ECommerce/readme.md)
