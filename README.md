@@ -49,5 +49,5 @@ Table of Content
 [Changing Backend Theme](./Backend%20Theme/readme.md)
 --------------------------------------------------
 
-[Ecommerce](./ECommerce/readme.md)
+[ECommerce](./ECommerce/readme.md)
 -----------------------
