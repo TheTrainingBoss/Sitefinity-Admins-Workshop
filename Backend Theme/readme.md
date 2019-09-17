@@ -17,11 +17,11 @@ Sitefinity comes with an improved backend theme:
 
 ![](../media/image198.jpeg)
 
-To switch to the new theme, you need to login to Sitefinity CMS with Administrator privileges and:
+To switch to a new theme, you need to login to Sitefinity CMS with Administrator privileges and:
 
-1.  Go to *Settings\>Advanced\>Appearance.*
+1.  Go to *Settings\>Advanced\>Appearance.* click on **create new**
 
-In field *BackendTheme,* enter *Light*.
+In field *Name,* enter *Blue* and fill in the Namespace and AssemblyInfo of where the resource containing your new theme is coming from.  You could also use the Path instead to point to a physical theme files in your App_Data folder.
 
 ![](../media/image200.jpeg)
 
