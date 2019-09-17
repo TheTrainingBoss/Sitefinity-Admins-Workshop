@@ -22,37 +22,15 @@ Generate RSS feed is enabled by default.
 
 ![](../media/image163.png)
 
-To see all the feeds configured for your site, click the
-*Administration \> Alternative Publishing* menu option. The screenshot
-shows feeds for ForumsRSS (created automatically for all forum posts)
-and Classic Car Parts (generated when the Classic Car Parts forum was
-created).
-
-![](../media/image164.png)
-
-Click the ForumsRSS item to see how the feed is configured and how to
-actually view the feed. The screenshot below shows the default
-configuration. Notice the *Publish as...* field has a URL that RSS
-readers and web browsers can use to view the feed.
-
-![](../media/image166.png)
-
-Try clicking the RSS feed link. Depending on your browser and how it's
-configured, the RSS will show up as a formatted list of articles. The
-screenshot below shows how RSS is displayed in Internet Explorer.
-Consult your browser's documentation for specifics on setting up the
-browser to read RSS feeds.
-
-![](../media/image167.png)
-
-#### Create a new Feed Manually
+Create a new Feed Manually
+---------------------------
 
 This next example describes creating a new custom feed. The example
 takes the RSS feed from an external blog site and funnels it into news
 content.
 
 The walk-through will require an external RSS feed URL. The example
-uses [http://blog.falafel.com/feed/](http://blog.falafel.com/feed/)
+uses [The CNN Top stories](http://rss.cnn.com/rss/edition.rss)
 but any valid RSS feed URL will do. Save the RSS URL for upcoming
 steps.
 
@@ -71,9 +49,10 @@ You can find RSS URLs at hundreds of sites. The link is usually marked with some
 
 ![](../media/image172.png)
 
-4.  Click the *Add another content type* button.
+4.  Delete the current **Content to Include** as well as the current **Publish as...**
+5.  Click the *Add another content type* button.
 
-5.  The *Content to Include* dialog displays. Select the *External
+6.  The *Content to Include* dialog displays. Select the *External
     RSS/Atom feed* radio button and enter the URL of the RSS feed into
     the Url name text box. From the *Schedule publication updates
     interval* drop down list, select *1 hour*. Click the *Done* button.
