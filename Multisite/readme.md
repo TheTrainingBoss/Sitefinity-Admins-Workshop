@@ -131,7 +131,5 @@ The news item from the default site is available here and, because
 this site is set to use the French language setting, the translation
 buttons are already available.
 
-![](../media/image93.png)
-
 **Next Topic**
 [Image Libraries](../Image%20Libraries/readme.md)
