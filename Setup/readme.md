@@ -5,8 +5,7 @@ As an administrator, you will be configuring the Sitefinity website
 environment for content authors, designers and developers to work in.
 You want to give everyone the tools they need while still protecting
 security and resources. The sections that follow explain setup of key
-areas of the site like Ecommerce, email setup, modules, security and
-site management.
+areas of the site like email setup, modules, security and site management.
 
 Email and Notification Configuration
 ------------------------------------
@@ -18,44 +17,16 @@ Emails can be triggered by:
 -   User action on content such as making a comment, creating an order
     or email from a campaign. These emails are *notifications*.
 
-Both administrative emails and notifications from content can use the
-exact same settings, but both should be filled out.
-
-Administrator generated emails are configured through Administration
-\> Settings \> Advanced. Select the System \> SMTP (Email Settings)
-node. Make sure that the SMTP server is entered in the Host text box
+Emails setup in Sitefinity is configured through *Administration \> Settings \>Basic Settings \> Email Settings* 
+Make sure that the SMTP server is entered in the Host text box
 and that the Port is correct for your server. Also enter the UserName
 and Password credentials for the server. Depending on the SMTP server
-requirements, you may need enter settings for *Domain*,
-*DeliveryMethod*, and *Enable SSL*.
-
-The SMTP server configuration is set at *Administration \> Settings \>
-Advanced \> Notifications \> Profiles \> Default*.
+requirements, you may need to enter additional settings like **Use SSL**
 
 ![](../media/image1.jpeg)
 
-Campaign Email
---------------
-
-To configure campaign email, such as newsletters and A/B campaigns,
-first add your SMTP server details to *Administration \> Settings \>
-Advanced \> Notifications \> Profiles \> Default*. See the [Email and
-Notification Configuration](#_bookmark1) section for more information.
-
-Under *Administration \> Settings \> Email Campaigns* you can send an
-email message to verify that the SMTP server is configured correctly.
-
-![](../media/image2.png)
-
-Bounced Messages
-
-Invalid email addresses "bounce" or fail to deliver. Under
-*Administration \> Settings \> Email Campaigns*, enable the *Track
-bounced* messaged check box to manage bounced messages. You will need
-address and authentication info for the POP3 server that will retrieve
-bounced messages.
-
-![](../media/image4.png)
+Invalid email addresses "bounce" or fail to deliver can be tracked by enabling the *Track bounced emails for email campaigns* messaged check box to manage bounced messages. You will need
+address and authentication info for the POP3 server that will retrieve bounced messages.
 
 The POP3 server can optionally respond to the temporary and permanent
 email delivery problems using *Soft bounce* and *Hard bounce* options.
@@ -64,12 +35,6 @@ recipient's mailbox is full, the email server is offline or the email
 is too large. Hard bounce responds to permanent delivery problems like
 incorrect email addresses, a bad domain name or if the recipient's
 server blocks email delivery.
-
-In the screenshot below, if the email server is offline, the server
-will retry. If the recipients' server blocks email delivery, the
-subscriber will be suspending.
-
-![](../media/image5.png)
 
 Personalization
 ---------------
@@ -128,7 +93,7 @@ Here is a partial listing of some commonly used characteristics:
 -   Purchases by Department, price range, type of product and so on.
 
 -   *Marketo* data fields if the Sitefinity site is connected to the
-    [Marketo](http://www.marketo.com/%C3%A2%E2%82%AC%C5%BD) product.
+    [Marketo](http://www.marketo.com/) product.
 
 Each selection will be added to the user segment definition. To enable
 the segment, select the *This user segment is active* check box and
