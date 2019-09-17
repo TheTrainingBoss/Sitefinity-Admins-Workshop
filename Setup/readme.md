@@ -104,8 +104,8 @@ save your changes.
 #### AND/OR Logic
 
 You can create flexible criteria using AND and OR sections within the
-editor. For example, the user visited the Home page AND the location
-is Texas OR the time is between 8 and 10 AM OR the visit was between 0
+editor. For example, the user visited the Welcome page AND the location
+is New York and the time is between 8 and 10 AM OR the visit was between 0
 and 180 seconds.
 
 ![](../media/image12.png)
@@ -132,8 +132,7 @@ Your initial, "original" pages are served to everyone that isn't part
 of a segment. To personalize Sitefinity pages, create alternate
 versions for specific users.
 
-From the list of Pages, open the Actions menu for the page and select
-*Personalize*.
+From the top of a Page in edit mode, click the down arrow next to the Personalization icon as you see below in the screenshot, and click on **Create personalized page**
 
 ![](../media/image15.png)
 
@@ -149,13 +148,8 @@ page.
 
 ![](../media/image19.png)
 
-Clicking the link will list personalized versions, allowing you to
-open and modify them, or to delete them by clicking the trash can
-icon.
-
-![](../media/image20.png)
-
-#### Previewing Personalized Pages
+Previewing Personalized Pages
+-----------------------------
 
 To test that segment criteria and personalized pages work as expected,
 open the preview console from *Marketing \> Personalization*, then
