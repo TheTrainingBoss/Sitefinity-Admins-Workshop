@@ -13,14 +13,10 @@ the modal window.
 
 ![](../media/image181.jpeg)
 
-In the *Multilingual URLs* section, you can define the strategy for
-your multilingual content URLs. Unless you absolutely want to have a
-subdomain defined for every language, the default option should work
-pretty well for you. The *Directories* strategy makes it a lot easier
-to manage languages without having to match languages with your sub
-domains.
-
 ![](../media/image183.jpeg)
+
+#### Note:
+Be careful, in case you are running the enterprise sku of Sitefinity with Multisite, you might still need to add the French language as well from the **Manage Sites** link on the top left of the Dashboard
 
 Once you have defined the languages, now you can start adding
 multilingual content to your site. Sitefinity includes nice visual
@@ -59,10 +55,10 @@ system. Select a new language from the drop down list, then click the
 
 ![](../media/image188.png)
 
-There is no immediate change. You need to load translated [[Labels &
-Messages]{.underline}](#Labels_&_Messages) to see the effect.
+There is no immediate change. You need to load translated Labels & Messages to see the effect.
 
-#### Labels & Messages
+Labels & Messages
+------------------
 
 The *Administration \> Labels & Messages* menu item displays a page
 that lists all the labels, captions and other text in the system that
@@ -75,7 +71,8 @@ Languages*. You can create labels for user interface elements in the
 backend and then export those settings as an XLSX "Language Pack", or
 you can import a language pack that already has the translations.
 
-#### Importing and Editing a Language Pack
+Importing and Editing a Language Pack
+-------------------------------------
 
 You can import \"language packs\" of translated labels and messages in
 .xlsx spreadsheet format. Sample language packs can be downloaded from
@@ -93,8 +90,6 @@ time to import and update the system.
 
 Refresh the page to see all the resourced items in the system backend
 display in the corresponding language.
-
-![](../media/image192.jpeg)
 
 To edit any of the labels, click the item in the list and edit the
 Invariant (default) language, and each language you have defined.
