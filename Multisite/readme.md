@@ -1,36 +1,36 @@
 Multisite
 ==============
-> Multisite capability allows you to have multiple sub sites within a
-> single Sitefinity instance. This means that you can share your
-> content, users, and permissions and so on, while still managing all
-> sites from a single user interface. You can even duplicate pages
-> between sites and share forms. This works particularly well for a
-> series of sites that have a similar purpose but serve different sets
-> of customers, for example a series of banks for different groups of
-> depositors, a group of stores located in different geographical areas
-> or even businesses located in different countries. If your site needs
-> an international presence, each individual sub site can even have its
-> own language.
->
+Multisite capability allows you to have multiple sub sites within a
+single Sitefinity instance. This means that you can share your
+content, users, and permissions and so on, while still managing all
+sites from a single user interface. You can even duplicate pages
+between sites and share forms. This works particularly well for a
+series of sites that have a similar purpose but serve different sets
+of customers, for example a series of banks for different groups of
+depositors, a group of stores located in different geographical areas
+or even businesses located in different countries. If your site needs
+an international presence, each individual sub site can even have its
+own language.
+
 #### Note: 
-> Sites can be created within multi-site management as shown
-> below, or existing sites can be migrated to multi-site using Site
-> Synchronization.
-> 
-> Multisite management requires an Enterprise license. See the
-> [Sitefinity Editions](http://www.sitefinity.com/editions) page for a
-> list of features included with each edition of Sitefinity.
->
-> Verify that the multisite feature is active using the Administration
-> \> Modules & Services option.
+Sites can be created within multi-site management as shown
+below, or existing sites can be migrated to multi-site using Site
+Synchronization.
+ 
+Multisite management requires an Enterprise license. See the
+[Sitefinity Editions](http://www.sitefinity.com/editions) page for a
+list of features included with each edition of Sitefinity.
+
+Verify that the multisite feature is active using the Administration
+\> Modules & Services option.
 
 ![](../media/image70.jpeg)
 
-> A drop down list in the upper left corner of the back-end
-> administration pages shows the name of the site you're currently
-> working on (named MultiSiteDemo in this example). Opening the list
-> allows you to manage sites or navigate to global settings (the
-> *Administration \> Settings* page).
+A drop down list in the upper left corner of the back-end
+administration pages shows the name of the site you're currently
+working on (named MultiSiteDemo in this example). Opening the list
+allows you to manage sites or navigate to global settings (the
+*Administration \> Settings* page).
 
 ![](../media/image71.png)
 
@@ -53,9 +53,9 @@ Let's create a second site:
 ![](../media/image75.png)
 
 #### Note: 
-> If you're developing the site and want to add a second
-> domain that can be used for preview, check the This site is in the
-> process of development checkbox and enter a Testing domain.
+If you're developing the site and want to add a second
+domain that can be used for preview, check the This site is in the
+process of development checkbox and enter a Testing domain.
 
 4.  The *Languages for public content* area will have a default
     language. In this example, click the *Add languages...* button,
@@ -67,9 +67,9 @@ Let's create a second site:
 5.  Leave *This site is in offline mode* option unchecked.
 
 #### Note: 
-> If you check this option you'll be prompted to either show a
-> message such as "The page is not accessible" or redirect the visitor
-> to another page when they try to open a page on the site.
+If you check this option you'll be prompted to either show a
+message such as "The page is not accessible" or redirect the visitor
+to another page when they try to open a page on the site.
 
 6.  Click the *Continue* button.
 
@@ -127,8 +127,11 @@ Let's create a second site:
 
 ![](../media/image91.png)
 
-> The news item from the default site is available here and, because
-> this site is set to use the French language setting, the translation
-> buttons are already available.
+The news item from the default site is available here and, because
+this site is set to use the French language setting, the translation
+buttons are already available.
 
 ![](../media/image93.png)
+
+**Next Topic**
+[Image Libraries](../Image%20Libraries/readme.md)

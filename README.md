@@ -44,6 +44,9 @@ Table of Content
 [Multilingual Content](./Multilingual/readme.md)
 ---------------------------------------------
 
+[Multisite](./Multisite/readme.md)
+---------------------------------------------
+
 [Image Libraries](./Image%20Libraries/readme.md)
 -----------------------------------
 
