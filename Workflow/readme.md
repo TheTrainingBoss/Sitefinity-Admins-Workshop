@@ -24,7 +24,7 @@ when a document is awaiting approval.
 
 ![](../media/image48.png)
 
-4.  The *Scope* section defines where the workflow will apply. Choose **Page** and **Blogs**. This means that the workflow will be triggered anytime the save button is clicked for any page or nes item. The remaining workflow options can be left with default values.
+4.  The *Scope* section defines where the workflow will apply. Choose **Pages** and **Blogs**. This means that the workflow will be triggered anytime the save button is clicked for any page or news item. The remaining workflow options can be left with default values.
 
 ![](../media/image52.png)
 
@@ -37,13 +37,13 @@ when a document is awaiting approval.
  
 ![](../media/image48B.png)
 
-6.  Click the *Next:Set approvers* button.
+6.  Click the **Next:Set approvers** button.
 
-7.  Choose the **editors** group to be able to approve content
+7.  Choose the **Editors** group to be able to approve content
 
 ![](../media/image49.png)
 
-8. Save the role.
+8. Click on Done.
 
 **Note**: The *Allow administrators to skip the workflow* option is
 recommended so that you don\'t have to slog through the approval
@@ -64,50 +64,26 @@ Testing the Workflow
 
 3.  Click the *Save Draft* button (notice that there is no *Publish* button).
 
-4.  Click the new *Send for Approval* button. Now the list of blog posts
-    shows a new status indicating the content is waiting on approval. A
-    user with an editor or administrator role can publish the content.
+4.  Click the new *Send for Approval* button. 
 
 ![](../media/image53.png)
 
-#### Site Management Notes on Upgrading
+5. You will have a chance to enter a note to the approver before the request is sent.
 
-The [Sitefinity documentation on
-upgrading](http://www.sitefinity.com/documentation/documentationarticles/installation-and-administration-guide/upgrade)
-details how to upgrade from Sitefinity 3.7 (and even earlier) to the
-present release of Sitefinity. Many of these instructions center on
-the Upgrade option on the right-click menu of the Project Manager. The
-catch is that the upgrade option will wipe out the Visual Studio
-project file to the default settings and the web configuration file
-also gets set back to its "vanilla" settings. If there is the
-slightest customization, non-standard references, or web configuration
-file changes in your Sitefinity project, these customizations can get
-lost by taking the upgrade menu option.
+![](../media/image53B.png)
 
-You can manually merge the Visual Studio project file (.csproj) web
-configuration (web.config) by comparing the files located in the
-Sitefinity installation directory under
+6. Now the list of blog posts shows a new status indicating the content is waiting on approval. A user with an editor or administrator role can publish the content.
 
-\_EmptyProject against your site. The \_EmptyProject files are used to
-create new sites. By comparing your site with the \_EmptyProject you
-can see how the site has been customized since it was created. You can
-use any source comparison tool to compare the project and web config
-files.
+![](../media/image53C.png)
+
 
 Notes on Deployment
+-------------------
 
 The [Sitefinity documentation on
 deployment](http://www.sitefinity.com/documentation/documentationarticles/installation-and-administration-guide/deployment)
 details how to move your Sitefinity application to a production
-server. In addition, be sure not to overwrite the app\_data folder or
-the database in production. These are live and constantly changing.
-With changes happening every second, overwriting the database can
-cause the database to become corrupt. Even when deploying code files
-to the app\_data folder, the database is being updated.
-
-When deploying, zip the project except for the app\_data folder and
-then overwrite the production files. You should merge the web.config
-manually, just as you would with any .NET application.
+server. 
 
 #### Continuous Delivery
 
@@ -140,12 +116,12 @@ the production server will automatically detect and apply the changes.
 
 The Site Sync module automatically copies content from one site to
 another. For example, if you have a live server and staging server you
-can refresh the staging server with live data. Both servers should be
+can refresh the Live server with Staging data. Both servers should be
 running the same version of Sitefinity with the same licensing.
 
 In the example that follows we have two sites named Site1 and Site2
 configured to run in IIS. There is an administrative user in each
-project called SiteSyncIUser1 and SiteSyncUser2, respectively. You can
+project called SiteSyncUser1 and SiteSyncUser2, respectively. You can
 setup both sites side-by-side. Site1 will be configured to send data
 to Site2.
 
@@ -153,26 +129,22 @@ to Site2.
 
 1.  The projects should be hosted in IIS. Configure the Sitefinity
     projects to work in your version of IIS using the steps in the
-    documentation foun[d
-    here.](http://www.sitefinity.com/documentation/documentationarticles/installation-and-administration-guide/install-sitefinity/configuring-the-iis-to-host-sitefinity-projects)
+    documentation found [here.](http://www.sitefinity.com/documentation/documentationarticles/installation-and-administration-guide/install-sitefinity/configuring-the-iis-to-host-sitefinity-projects)
 
 2.  Run both sites and login to the backend of each.
 
 3.  By default, site synchronization is not installed or active so your
     first step will be to select the Administration \> Modules &
     Services menu option. Click the Install option in the Actions menu
-    of the Staging and Syncing item. Do this for both sites.
+    of the **Site Sync** item. Do this for both sites.
 
 ![](../media/image54.jpeg)
 
-4.  [Create a new user](#Creating_a_User) from the *Administration \>
-    Users* menu option. This user will only be used for site
-    synchronization and will never be logged in. The user should have
-    the Administrator role. Do this for both sites and make the name
-    unique for each site, e.g. SiteSyncIUser1 and SiteSyncUser2.
+4.  Create a new user from the *Administration \> Users* menu option. This user will only be used for site
+    synchronization and will never be logged in. The user should have the Administrator role. Do this for both sites and make the name
+    unique for each site, e.g. SiteSyncUser1 and SiteSyncUser2.
 
-5.  Now select the new menu item *Administration \> Staging and Syncing*
-    for both sites.
+5.  Now select the new menu item *Administration \> Site Sync* for both sites.
 
 ![](../media/image56.png)
 
