@@ -6,7 +6,11 @@ When an image library is first setup, the Root library settings may
 not get a lot of attention, but you will need to review this
 configuration to get the best performance and behavior out of the
 site. To edit image library settings, select the *Content \> Images*
-menu option. In the Actions menu for a library, select the *Edit
+menu option. 
+
+![](../media/image194.jpeg)
+
+In the Actions menu for a library, select the *Edit
 properties* option, then open the Root library settings section.
 
 ![](../media/image195.jpeg)
