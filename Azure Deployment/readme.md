@@ -5,10 +5,8 @@ Publishing to the cloud makes your site instantly more scalable and
 reliable. Need failover capability or to suddenly expand capacity? You
 can take your Sitefinity site as it is now and push it up to Azure.
 
-![](../media/image95.jpeg)
-
-The technologies used in this example are Sitefinity 9, Visual Studio
-2015 Update 2, SQL Server Management Studio 2014 and the [Azure
+The technologies used in this example are Sitefinity 12, Visual Studio
+2019, SQL Server Management Studio 18.2 and the [Azure
 portal](https://portal.azure.com/) The Sitefinity
 website and Sitefinity database are already created on the development
 server. We'll be creating the following elements in Azure during this
@@ -58,7 +56,7 @@ from imported data.
 #### Publish the Database
 
 The simplest way to publish the database is from Microsoft SQL Server
-Management Studio 2014 cumulative update 6 or later. This route allows
+Management Studio 18 or later. This route allows
 you to use the *Deploy Database to Microsoft Azure SQL Database...*
 option directly to an Azure Database.
 
