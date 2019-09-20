@@ -26,7 +26,7 @@ able to login to the Sitefinity backend.
 In the Azure portal
 - First Create a new resource group to contain all your resources for your Sitefinity Cloud needs
 
-![](../media/image98B.jpeg)
+![](../media/image97B.jpeg)
 
 - Create a new SQL Server. Make a note of the server path, the user name and password. 
 
