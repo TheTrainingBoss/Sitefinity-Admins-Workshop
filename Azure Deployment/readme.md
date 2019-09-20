@@ -23,12 +23,18 @@ able to login to the Sitefinity backend.
 
 #### Create the Azure SQL Server
 
-In the Azure portal, create a new SQL Server. Make a note of the
-server path, the user name and password. Create a new Resource group
-to contain all the elements of your website. Be sure that the *Allow
-Azure Services to Access the Server* checkbox is enabled.
+In the Azure portal
+- First Create a new resource group to contain all your resources for your Sitefinity Cloud needs
+
+![](../media/image98B.jpeg)
+
+- Create a new SQL Server. Make a note of the server path, the user name and password. 
 
 ![](../media/image98.jpeg)
+
+- Be sure that the *Allow Azure Services to Access the Server* checkbox is enabled.
+
+![](../media/image98B.jpeg)
 
 #### Note: 
 If you use the resource group for everything related to the
