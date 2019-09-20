@@ -77,8 +77,7 @@ In Deployment Settings, click the *Connect* button.
 ![](../media/image107.jpeg)
 
 In the Connect to Server dialog, enter the Server name, Login and
-Password you saved when you [[created the Azure
-server]{.underline}.](#Create_the_Azure_SQL_Server) Click the
+Password you saved when you created the Azure server. Click the
 *Connect* button to return to Deployment settings.
 
 ![](../media/image109.jpeg)
@@ -103,7 +102,8 @@ took about 4 or 5 minutes to complete.
 
 ![](../media/image115.jpeg)
 
-#### Prepare the Sitefinity Application for Publication
+Prepare the Sitefinity Application for Publication
+--------------------------------------------------
 
 On your local development machine, open the Sitefinity site in Visual
 Studio. In the Solution Explorer, click the *Show All Files* button,
@@ -122,145 +122,10 @@ the value of the *dbType* attribute to *SqlAzure*.
 ![](../media/image118.jpeg)
 
 Open the project's *web.config* file for editing. Locate the
-*\<sectionGroup name="telerik"*
-
-*...\>* tag and ***uncomment*** the section. Then find the
-*\<telerik\>* tag and uncomment that section as well.
+*\<sectionGroup name="telerik"* Make sure the storageMode is equal to "Auto" or at least "Database" but definitely **NOT** "File System"
 
 ![](../media/image120.png)
 
-Database storage is the suggested way to go for configuration files.
-It allows scaling out more easily, as opposed to copying config files
-across multiple instances. If you think you might need to scale-out,
-go with the database storage up-front.
-
-At the time of this writing, the 2.7 version of the Azure SDK is
-required, even if you're on a later version of the Azure SDK. In the
-web.config *\<runtime\>\<assemblyBinding\>* section, add a
-*dependentAssembly* entry to ensure that the 2.7 version of Azure is
-used.
-
-\<dependentAssembly\>
-
-\<assemblyIdentity name=\"Microsoft.WindowsAzure.ServiceRuntime\"
-publicKeyToken=\"31bf3856ad364e35\"/\>
-
-\<bindingRedirect oldVersion=\"0.0.0.0-2.6.0.0\"
-newVersion=\"2.7.0.0\"/\>
-
-\</dependentAssembly\>
-
-Here is a listing of the entire \<runtime\> tag in our running example for reference.
-
-\<runtime\>
-
-\<assemblyBinding xmlns=\"urn:schemas-microsoft-com:asm.v1\"\>
-
-\<dependentAssembly\>
-
-\<assemblyIdentity name=\"Newtonsoft.Json\"
-publicKeyToken=\"30ad4fe6b2a6aeed\" culture=\"neutral\" /\>
-
-\<bindingRedirect oldVersion=\"0.0.0.0-6.0.0.0\"
-newVersion=\"6.0.0.0\" /\>
-
-\</dependentAssembly\>
-
-\<dependentAssembly\>
-
-\<assemblyIdentity name=\"System.Web.Helpers\"
-publicKeyToken=\"31bf3856ad364e35\"
-
-/\>
-
-\<bindingRedirect oldVersion=\"1.0.0.0-3.0.0.0\"
-newVersion=\"3.0.0.0\" /\>
-
-\</dependentAssembly\>
-
-\<dependentAssembly\>
-
-\<assemblyIdentity name=\"System.Web.WebPages\"
-publicKeyToken=\"31bf3856ad364e35\" /\>
-
-\<bindingRedirect oldVersion=\"0.0.0.0-3.0.0.0\"
-newVersion=\"3.0.0.0\" /\>
-
-\</dependentAssembly\>
-
-\<dependentAssembly\>
-
-\<assemblyIdentity name=\"System.Web.Mvc\"
-publicKeyToken=\"31bf3856ad364e35\" /\>
-
-\<bindingRedirect oldVersion=\"0.0.0.0-5.2.3.0\"
-newVersion=\"5.2.3.0\" /\>
-
-\</dependentAssembly\>
-
-\<dependentAssembly\>
-
-\<assemblyIdentity name=\"System.Web.Razor\"
-publicKeyToken=\"31bf3856ad364e35\" culture=\"neutral\" /\>
-
-\<bindingRedirect oldVersion=\"0.0.0.0-3.0.0.0\"
-newVersion=\"3.0.0.0\" /\>
-
-\</dependentAssembly\>
-
-\<dependentAssembly\>
-
-\<assemblyIdentity name=\"System.Web.WebPages.Razor\"
-publicKeyToken=\"31bf3856ad364e35\" culture=\"neutral\" /\>
-
-\<bindingRedirect oldVersion=\"0.0.0.0-3.0.0.0\"
-newVersion=\"3.0.0.0\" /\>
-
-\</dependentAssembly\>
-
-\<dependentAssembly\>
-
-\<assemblyIdentity name=\"Telerik.Sitefinity.Mvc\"
-publicKeyToken=\"b28c218413bdf563\" culture=\"neutral\" /\>
-
-\<bindingRedirect oldVersion=\"1.3.350.0\" newVersion=\"1.4.360.0\"
-/\>
-
-\</dependentAssembly\>
-
-\<dependentAssembly\>
-
-\<assemblyIdentity name=\"System.Threading.Tasks\"
-publicKeyToken=\"b03f5f7f11d50a3a\" culture=\"neutral\" /\>
-
-\<bindingRedirect oldVersion=\"0.0.0.0-2.6.8.0\"
-newVersion=\"2.6.8.0\" /\>
-
-\</dependentAssembly\>
-
-\<dependentAssembly\>
-
-\<assemblyIdentity name=\"Microsoft.WindowsAzure.ServiceRuntime\"
-publicKeyToken=\"31bf3856ad364e35\"/\>
-
-\<bindingRedirect oldVersion=\"0.0.0.0-2.6.0.0\"
-newVersion=\"2.7.0.0\"/\>
-
-\</dependentAssembly\>
-
-\<dependentAssembly\>
-
-\<assemblyIdentity name=\"System.Web.Cors\"
-publicKeyToken=\"31bf3856ad364e35\" /\>
-
-\<bindingRedirect oldVersion=\"1.0.0.0-5.2.0.0\"
-newVersion=\"5.2.0.0\" /\>
-
-\</dependentAssembly\>
-
-\</assemblyBinding\>
-
-\</runtime\>
 
 #### Publish to Azure
 
@@ -276,8 +141,6 @@ Microsoft Azure App Service publish target.
 
 Click the *New...* button to create a new App Service.
 
-![](../media/image124.png)
-
 Enter a Web App Name or leave the automatic defaults. Use the Resource
 Group created earlier to keep all the website elements in one
 container. The App Service plan is defined by your Resource Group, so
@@ -285,11 +148,11 @@ you can leave the default. Click the *Create* button.
 
 ![](../media/image125.jpeg)
 
-Your deploy settings should download automatically. You can do a quick
-verification using the *Validate Connection* button, then click the
-*Publish* button.
+Make sure you choose an appropriate Hosting plan for your service
 
-![](../media/image127.jpeg)
+![](../media/image124.png)
+
+Your deploy settings should download automatically. Click on Deploy and wait few minutes till the site appears in your default browser
 
 The Visual Studio Output window will show the build progress. Then
 Visual Studio will kick off a browser to display the Sitefinity --
