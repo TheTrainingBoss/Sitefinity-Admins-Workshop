@@ -23,6 +23,8 @@ this document
 
 ![](./media/SitefinityTraining.png)
 
+This workshop is to get Administrators up and running quickly with Sitefinity and allow them to configure a site with ease. This workshop will help you configure a Sitefinity site (setup, Modules, Workflow, Azure Deployment, Alternative Publishing, Multilingual Content, Multisites, Image Libraries and Backend Theme Changes) that will get you to master the configuration of Sitefinity in no time. I hope you enjoy administrating Sitefinity as much I have been since 2005.
+
 Table of Content
 ================
 
